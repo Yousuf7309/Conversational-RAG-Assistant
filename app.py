@@ -1,6 +1,6 @@
 import streamlit as st
 import os
-import tempfile # <--- New import to handle the PDF memory issue!
+import tempfile
 from dotenv import load_dotenv
 
 # Import our custom Lego blocks
@@ -36,7 +36,7 @@ if "chat_history" not in st.session_state:
 # Sidebar: Data Upload
 # ==========================================
 with st.sidebar:
-    st.header("1. Upload Knowledge Base")
+    st.header("Upload Knowledge Base")
     
     urls_input = st.text_area("Enter Website URLs (one per line):", height=150)
     st.markdown("**OR / AND**")
@@ -94,7 +94,7 @@ with st.sidebar:
 # ==========================================
 # Main Chat Interface
 # ==========================================
-st.header("2. Ask Questions")
+st.header("Ask Questions")
 
 # 1. Draw the existing chat history on the screen
 for msg in st.session_state.chat_history:
