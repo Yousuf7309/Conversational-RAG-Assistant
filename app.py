@@ -16,8 +16,15 @@ load_dotenv()
 # UI Setup & Session State
 # ==========================================
 st.set_page_config(page_title="Pro RAG Assistant", layout="wide")
-st.title("🤖 Professional RAG Assistant")
+st.title("Conversational RAG Assistant")
 st.markdown("Powered by **Llama 3.1 (Groq)** and **BGE-Large Embeddings**.")
+st.markdown("**Instructions (How to use) -**")
+st.markdown("""
+1. Go to the sidebar on the left and upload your PDFs or paste website URLs.
+2. Click the **Process Documents** button and wait for the success message.
+3. Ask follow-up questions in the chat box below!
+---
+""")
 
 # Initialize session state variables
 if "retriever" not in st.session_state:
