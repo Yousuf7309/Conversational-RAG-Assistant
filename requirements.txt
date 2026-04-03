@@ -1,0 +1,15 @@
+langchain
+langchain_classic
+langchain_core
+langchain-community
+langchain-groq
+langchain-huggingface
+beautifulsoup4
+pypdf
+chromadb
+faiss-cpu
+streamlit
+python-dotenv
+langchain_chroma
+sentence-transformers
+torchvision
